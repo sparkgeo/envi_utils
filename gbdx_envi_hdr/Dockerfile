@@ -13,4 +13,4 @@ RUN pip install -r requirements.txt
 
 COPY . /app_src
 
-CMD ["python", "app.py"]
+CMD ["python", "envi_hdr.py"]
