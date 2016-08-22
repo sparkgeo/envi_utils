@@ -4,7 +4,7 @@ Some utilities for working with ENVI.
 
 ## Header file Creation
 
-The `gbdx_envi_hdr` contains a gbdx task that will take a raster input and create an ENVI header file with the associated wavelength data.
+`gbdx_envi_hdr` contains a GBDX task that will take a raster input and create an ENVI header file with the associated wavelength data.
 
 The function will proceed in this order:
 
@@ -47,15 +47,14 @@ DG_WEIGHTED_BAND_CENTERS = {
     'WV01_P' :     [670.17],
     'WV02_MULTI' : [428.58,479.35,548.07,607.78,658.92,723.27,825.06,914.55],
     'WV02_MS1' :   [479.35,548.07,658.92,825.06],
+    'WV02_MS2' :   [428.58,607.78,723.27,914.55], # Added
     'WV02_P' :     [651.05],
-    'WV03_MULTI' : [427.38,481.92,547.14,604.28, \
-                    660.11,722.73,824.04,913.65],
-    'WV03_MS1' :   [481.92,547.14, \
-                    660.11,824.04],
+    'WV03_MULTI' : [427.38,481.92,547.14,604.28,660.11,722.73,824.04,913.65],
+    'WV03_MS1' :   [481.92,547.14,660.11,824.04],
+    'WV03_MS2' :   [427.38,604.28,722.73,913.65], # Added
     'WV03_P' :     [649.36],
-    'WV03_ALL-S' : [1209.06,1571.61,1661.10,1729.54, \
-                    2163.69,2202.16,2259.32,2329.22]
+    'WV03_ALL-S' : [1209.06,1571.61,1661.10,1729.54,2163.69,2202.16,2259.32,2329.22]
 }
 ```
 
-These values are from the gbdx geoio library, https://github.com/DigitalGlobe/geoio/blob/master/geoio/constants.py.
+These values are from the GBDX geoio library, https://github.com/DigitalGlobe/geoio/blob/master/geoio/constants.py.
