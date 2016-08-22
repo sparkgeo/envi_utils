@@ -1,0 +1,37 @@
+{
+    "containerDescriptors": [
+        {
+            "properties": {
+                "image": "sparkgeo/gbdx_envi_hdr:latest"
+            },
+            "type": "DOCKER"
+        }
+    ],
+    "description": "Add an ENVI header file with the images wavelength data.",
+    "inputPortDescriptors": [
+        {
+            "description": "The directory for the AOP image data.",
+            "name": "image",
+            "required": true,
+            "type": "directory"
+        }, {
+            "description": "The directory for the AOP image data.",
+            "name": "sensor_id",
+            "required": true,
+            "type": "directory"
+        }
+    ],
+    "name": "ENVI_HDR",
+    "outputPortDescriptors": [
+        {
+            "description": "The original AOP image data with the ENVI .hdr file.",
+            "name": "output_data",
+            "required": true,
+            "type": "directory"
+        }
+    ],
+    "properties": {
+        "isPublic": true,
+        "timeout": 7200
+    }
+}
