@@ -17,7 +17,7 @@
         }, {
             "description": "The directory for the AOP image data.",
             "name": "sensor_id",
-            "required": true,
+            "required": false,
             "type": "directory"
         }
     ],
