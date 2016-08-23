@@ -31,12 +31,6 @@ class EnviHdr(GbdxTaskInterface):
         image_port_path = self.get_input_data_port('image')
         output_port_path = self.get_output_data_port('output_data')
 
-        # Log to file
-        hdlr = logging.FileHandler(os.path.join(output_port_path, 'envi_hdr.log'))
-        hdlr.setLevel(logging.DEBUG)
-        hdlr.setFormatter(self.formatter)
-        self.logger.addHandler(hdlr)
-
         try:
             os.makedirs(output_port_path)
         except OSError as e:
@@ -45,6 +39,12 @@ class EnviHdr(GbdxTaskInterface):
                 raise e
             else:
                 pass
+
+        # Log to file
+        hdlr = logging.FileHandler(os.path.join(output_port_path, 'envi_hdr.log'))
+        hdlr.setLevel(logging.DEBUG)
+        hdlr.setFormatter(self.formatter)
+        self.logger.addHandler(hdlr)
 
         self.logger.debug("Start Log: ")
 
