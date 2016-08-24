@@ -9,7 +9,7 @@ Some utilities for working with ENVI.
 The function will proceed in this order:
 
 - If \*.IMD or \*.XML file exists with same name as \*.TIF, parse to find satellite id
-- Else, the task port `satellite_name` must be provided.
+- Else, the task input string port `sensor_id` must be provided. Valid values are the keys from the mappings below. ie `WV02_MULTI` or `WV03_P`.
 
 Valid satellites and band names are:
 
