@@ -8,7 +8,7 @@ Some utilities for working with ENVI.
 
 The function will proceed in this order:
 
-- If \*.IMD or \*.XML file exists with same name as \*.TIF, parse to find satellite id
+- If \*.IMD file exists with same name as \*.TIF, parse to find satellite id
 - Else, the task port `satellite_name` must be provided.
 
 Valid satellites and band names are:
