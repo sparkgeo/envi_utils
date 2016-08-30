@@ -2,7 +2,7 @@
 from gbdxtools import Interface
 gbdx = Interface()
 
-add_hdr = gbdx.Task("ENVI_HDR")
+add_hdr = gbdx.Task("Build_ENVI_HDR")
 add_hdr.inputs.image = 's3://gbd-customer-data/7d8cfdb6-13ee-4a2a-bf7e-0aff4795d927/kathleen_AComp/AComp2Envi/AComp/'
 # add_hdr.inputs.sensor_id = 'WV02_MULTI'  # Example of providing the sensor id as a port value.
 

@@ -21,7 +21,7 @@
             "type": "directory"
         }
     ],
-    "name": "ENVI_HDR",
+    "name": "Build_ENVI_HDR",
     "outputPortDescriptors": [
         {
             "description": "The original AOP image data with the ENVI .hdr file.",
